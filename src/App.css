@@ -1,0 +1,234 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: #1e293b;
+  background: #f1f5f9;
+  transition: all 0.3s ease;
+}
+
+.container.dark {
+  background: #1f2937;
+  color: #f1f5f9;
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+header p {
+  color: #64748b;
+}
+.container.dark header p {
+  color: #cbd5e1;
+}
+
+
+.dark-toggle {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  transition: all 0.3s ease;
+}
+.dark-toggle:hover {
+  background: #3b82f6;
+}
+
+
+.form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.form input,
+.form select {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  transition: all 0.3s ease;
+}
+.form input:focus,
+.form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.5);
+  outline: none;
+}
+.form button {
+  padding: 12px 20px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form button:hover {
+  background: #1d4ed8;
+}
+
+
+.filter {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.filter-card {
+  background: #e2e8f0;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.filter-card label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+.filter-card select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter-card select:hover {
+  border-color: #2563eb;
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+
+
+.container.dark .filter-card {
+  background: #2d3748;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.container.dark .filter-card select {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #4a5568;
+}
+
+.month-section {
+  margin-bottom: 40px;
+}
+.month-section h2 {
+  margin-bottom: 16px;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 6px;
+}
+.container.dark .month-section h2 {
+  border-bottom: 2px solid #3b82f6;
+}
+
+.goals {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.goal-card {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+.container.dark .goal-card {
+  background: #2d3748;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-right: 6px;
+  color: white;
+}
+.tag.high { background: #ef4444; }
+.tag.medium { background: #f59e0b; }
+.tag.low { background: #16a34a; }
+
+.category {
+  font-size: 0.8rem;
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+.container.dark .category {
+  background: #2563eb;
+  color: #f1f5f9;
+}
+
+
+.progress {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 8px;
+}
+.container.dark .progress { color: #cbd5e1; }
+
+.subtasks { margin-top: 6px; }
+.add-subtask {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+.add-subtask input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  transition: all 0.3s ease;
+}
+.add-subtask button {
+  padding: 6px 10px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.add-subtask button:hover { background: #1d4ed8; }
+
+.reset {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.reset:hover { background: #dc2626; }
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  color: #94a3b8;
+}
+.container.dark footer { color: #cbd5e1; }
+
+
+@media (max-width: 600px) {
+  .goals { grid-template-columns: 1fr; }
+}
