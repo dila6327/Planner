@@ -7,7 +7,19 @@
   background: #f1f5f9;
   transition: all 0.3s ease;
 }
-
+.delete-goal {
+  margin-top: 10px;
+  padding: 6px 10px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.delete-goal:hover {
+  background: #dc2626;
+}
 .container.dark {
   background: #1f2937;
   color: #f1f5f9;
