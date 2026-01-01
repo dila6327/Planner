@@ -94,6 +94,7 @@ export default function App() {
     );
   }, [filterCategory, filterPriority, filterMonth]);
 
+  // Add goal
   const addGoal = () => {
     if (!title.trim()) return;
     setGoals([
@@ -109,6 +110,11 @@ export default function App() {
       },
     ]);
     setTitle("");
+  };
+
+  // Delete goal
+  const deleteGoal = (goalId: number) => {
+    setGoals((prev) => prev.filter((goal) => goal.id !== goalId));
   };
 
   const addSubtask = (goalId: number, text: string) => {
@@ -306,6 +312,14 @@ export default function App() {
                     ))}
                     <AddSubtask goalId={goal.id} addSubtask={addSubtask} />
                   </div>
+
+                  {/* DELETE BUTTON */}
+                  <button
+                    className="delete-goal"
+                    onClick={() => deleteGoal(goal.id)}
+                  >
+                    Delete Goal
+                  </button>
                 </div>
               ))}
             </div>
